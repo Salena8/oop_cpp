@@ -5,16 +5,14 @@ int calculate( int num1, int num2, char o){
 switch (o){
      case '+':
         return num1+num2;
-        break;
     case '-':
         return num1-num2;
-        break;
     case '*':
       return num1*num2;
-        break;
     case '/' :
         return num1/num2;
-        break;
+    defaut: 
+        return "Error!"
 };
 }
 
