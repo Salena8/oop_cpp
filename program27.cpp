@@ -9,10 +9,10 @@ class Time{
         hours = h;
         min = m;
     }
-    friend Time operator ==(Time, Time);
+    friend bool operator ==(Time, Time);
 
 };
-Time operator ==(Time t1, Time t2){
+bool operator ==(Time t1, Time t2){
     if(t1.hours == t2.hours && t1.min == t2.min)
     return 1;
     else
